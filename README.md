@@ -69,7 +69,12 @@ The dataset used for this project is a small part of the GLR21 (https://www.kagg
 
 # Website demo
 Using streamlit to build a website demo
+User will choose which apart (whole image) to retrive
 <p align="center">
 <img src="https://github.com/ptatien0307/image_retrieval/assets/79583501/d9b61417-1fb6-4c15-aa3f-e40acd987453.png" alt="drawing" width="75%" height="75%"/>
 </p>
 
+Result will be return as top K (user will cho K result)
+<p align="center">
+<img src="https://github.com/ptatien0307/image_retrieval/assets/79583501/21c8264e-8684-4c44-af58-00ce04c9d5b0.png" alt="drawing" width="75%" height="75%"/>
+</p>
