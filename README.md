@@ -60,6 +60,159 @@ Faiss (Faiss is a library for efficient similarity search and clustering of dens
     <p align="center">
     <img src="https://github.com/ptatien0307/image_retrieval/assets/79583501/c8491dc4-6bf7-491a-93f4-d89744dc7bf7.png" alt="drawing" width="50%" height="50%"/>
     </p>
+
+<br>
+<br>
+
+# Evaluation
+
+<table>
+    <thead>
+        <tr>
+            <th>Feature Extraction</th>
+            <th>SIAM</th>
+            <th>Index</th>
+            <th>MAP10</th>
+            <th>MAP@50</th>
+            <th>MAP@100</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=8>
+              VGG16
+            </td>
+            <td>_</td>
+            <td>FlatL2</td>
+            <td>0.57</td>
+            <td>0.47</td>
+            <td>0.41</td>
+        </tr>
+        <tr>
+            <td>_</td>
+            <td>LSH</td>
+            <td>0.82</td>
+            <td>0.68</td>
+            <td>0.62</td>
+        </tr>
+        <tr>
+            <td>_</td>
+            <td>IVF</td>
+            <td>0.67</td>
+            <td>0.57</td>
+            <td>0.53</td>
+        </tr>
+        <tr>
+            <td>_</td>
+            <td>PQ</td>
+            <td>0.71</td>
+            <td>0.59</td>
+            <td>0.53</td>
+        </tr>
+        <tr>
+            <td>Triplet</td>
+            <td>FlatL2</td>
+            <td>0.81</td>
+            <td>0.78</td>
+            <td>0.77</td>
+        </tr>
+        <tr>
+            <td>Triplet</td>
+            <td>PQ</td>
+            <td>0.81</td>
+            <td>0.78</td>
+            <td>0.77</td>
+        </tr>
+        <tr>
+            <td>GeM + Contrastive</td>
+            <td>FlatL2</td>
+            <td>0.90</td>
+            <td>0.79</td>
+            <td>0.73</td>
+        </tr>
+         <tr>
+             <td>GeM + Contrastive</td>
+            <td>LSH</td>
+            <td>0.88</td>
+            <td>0.76</td>
+            <td>0.70</td>
+         </tr>
+        <tr>
+            <td rowspan=5>
+              ResNet50
+            </td>
+            <td>triplet</td>
+            <td>FlatL2</td>
+            <td>0.93</td>
+            <td>0.84</td>
+            <td>0.78</td>
+        </tr>
+        <tr>
+            <td>Triplet</td>
+            <td>PQ</td>
+            <td>0.86</td>
+            <td>0.83</td>
+            <td>0.82</td>
+        </tr>
+        <tr>
+            <td>GeM + Contrastive</td>
+            <td>FlatL2</td>
+            <td>0.93</td>
+            <td>0.84</td>
+            <td>0.78</td>
+        </tr>
+        <tr>
+            <td>>GeM + Contrastive</td>
+            <td>PQ</td>
+            <td>0.92</td>
+            <td>0.83</td>
+            <td>0.78</td>
+        </tr>
+        <tr>
+            <td>>GeM + Contrastive</td>
+            <td>LSH</td>
+            <td>0.91</td>
+            <td>0.81</td>
+            <td>0.75</td>
+        </tr>
+       <tr>
+            <td rowspan=2>
+              DELF
+            </td>
+            <td>-</td>
+            <td>FlatL2</td>
+            <td>0.83</td>
+            <td>0.73</td>
+            <td>0.69</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>IVF</td>
+            <td>0.84</td>
+            <td>0.78</td>
+            <td>0.76</td>
+        </tr>
+        <tr>
+            <td>HOG</td>
+            <td>-</td>
+            <td>FlatL2</td>
+            <td>0.36</td>
+            <td>0.28</td>
+            <td>0.24</td>
+        </tr>
+        <tr>
+            <td>BoVW</td>
+            <td>-</td>
+            <td>FlatL2</td>
+            <td>0.43</td>
+            <td>0.32</td>
+            <td>0.27</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
     
 # Dataset
 The dataset used for this project is a small part of the GLR21 (https://www.kaggle.com/competitions/landmark-recognition-2021). Here's some example
